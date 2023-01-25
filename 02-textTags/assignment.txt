@@ -1,0 +1,6 @@
+1) Steps to Create a Webpage in HTML using Notepad
+2) Program to see difference between paragraphs & normal text with line break
+3) Write an HTML program to display hello world.
+4) Write a program to create a webpage to print values 1 to 5
+5) Write a program to create a webpage to print your city name in red color.
+6) Write a program to print a paragraph with different font and color.
