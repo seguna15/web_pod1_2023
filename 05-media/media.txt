@@ -1,0 +1,9 @@
+Images are off varying types;
+a) Favicon: this is used to display the websites icon in the tab section. visit https://favicon.io/ to generate a favicon for your website. You use a favicon by including this in your head element just before the title element.You can either generate a favicon from a PNG file, Emoji or Text.
+b) PNG/JPEG: You can download any image online to use. resources where you can get images include; 
+i) https://pexels.com 
+ii) https://freepik.com 
+iii) https://pixabay.com
+iv) https://icons8.com (icons)
+v) https://undraw.co/ (svg)
+Sometimes we may want to optimize images to reduce the size or its dimension you can do this with photoshop or use several available online resources such as; http://www.imageoptimizer.net/
