@@ -1,0 +1,11 @@
+Create a questionnaire similar to the one in "sample.webp" 
+
+Follow the instructions below:
+1) Create a new folder named "questionnaire"
+2) This project should be strictly in HTML
+3) Generate a favicon and include it in "assets/images" folder
+4) Link the favicon to your HTML
+5) Code the project in HTML
+6) Create a github repo name "questionnaire"
+7) Push the project to your github repo
+8) Copy the link to your repo and share with me.
