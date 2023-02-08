@@ -4,6 +4,7 @@ POST - create or write new data
 PUT - replaces all data in a target resource
 PATCH - partial modification
 DELETE - deletes the specific resource
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 
 Popular HTTP Status Codes
 200 OK

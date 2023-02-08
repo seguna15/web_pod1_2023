@@ -5,10 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form inputs</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <h1>Form Inputs</h1>
     
-    <form action="" method="" enctype=""></form>
+    <form action="" method="" enctype="">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter username"> <br> <br>
+        <label for="usermail">Email:</label>
+        <input type="email" name="usermail" id="usermail" placeholder="Enter email address"> <br><br>
+        <label for="userpass">Password:</label>
+        <input type="password" name="userpass" id="userpass" placeholder="Enter password"> <br><br>
+        <label for="description">Describe yourself:</label>
+        <textarea name="description" id="description" cols="30" rows="10">Write a description of yourself</textarea> <br><br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" id="female" value="female" checked> <label for="female">Female</label>
+        <input type="radio" name="gender" id="male" value="male"> <label for="male">Male</label> <br><br>
+        <label>Hobbies</label>
+        <input type="checkbox" name="hobbies" id="football" value="football"> <label for="football">Football</label>
+        <input type="checkbox" name="hobbies" id="movies" value="movies"> <label for="movies">Movies</label>
+        <input type="checkbox" name="hobbies" id="coding" value="coding" checked> <label for="coding">Coding</label> <br><br>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="">Select Country</option>
+            <option value="Britain">England</option>
+            <option value="Germany">Germany</option>
+            <option value="India">India</option>
+            <option value="Nigeria">Nigeria</option>
+        </select> <br><br>
+        <label for="dob">DOB:</label>
+        <input type="date" name="dob" id="dob"> <br><br>
+        <label for="image">Upload Image:</label>
+        <input type="file" name="image" id="image"> <br><br>
+
+        <input type="reset" value="Reset">
+        <button type="reset">Reset <i class='bx bx-reset'></i></button>
+        <input type="submit" value="Submit">
+        <button type="submit">Submit <i class='bx bxs-save'></i></button>
+    </form>
 </body>
 </html>
