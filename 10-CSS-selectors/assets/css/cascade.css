@@ -1,0 +1,16 @@
+
+/*Specificity Rule*/
+p.text{
+    color: green;
+}
+
+/*Last Rule*/
+p{
+    color: red;
+    color: blue !important; /*Important overrides both specificity and last rule*/
+}
+
+/* Specificity rule 
+p.text{
+    color: green;
+} */

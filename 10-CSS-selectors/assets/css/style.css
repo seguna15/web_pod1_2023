@@ -1,0 +1,85 @@
+/*Universal Selector
+this style will be applied to all elements on the page*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element or Type Selector
+this applies a styling rule to a specific html element */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+li{
+    font-size: 18px;
+    list-style: none;
+    margin: 20px 40px;
+}
+
+section{
+    margin: 30px;
+    border: 1px solid purple;
+    padding: 20px;
+}
+
+/* Class selector 
+applies this style to all elements belonging to a particular class */
+.links{
+    color: green;
+    text-decoration: none;
+}
+
+.section-title{
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+/*ID selector
+applies this style to an element with a matching ID*/
+#logo{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 40px;
+}
+
+#credit {
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+/* Child selector
+selects an element that is a direct child*/
+#home > h1{
+    font-size: 42px;
+}
+
+#home > p {
+    font-size: 24px;
+}
+
+#credit > a {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+/* Descendant selector
+applies to the descendant of a specified element */
+
+#services p {
+    margin: 10px;
+    color: blueviolet;
+}
+
+header ul {
+    border: 1px solid blueviolet;
+    width: 300px;
+    margin: 40px;
+}

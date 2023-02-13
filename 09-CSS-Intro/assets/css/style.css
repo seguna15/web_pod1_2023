@@ -1,0 +1,12 @@
+p {
+    background-color: blueviolet;
+    color: whitesmoke;
+    padding: 20px;
+    font-size: 18px;
+    border: 2px solid brown;
+}
+
+span {
+    color: orange;
+    background-color: black;
+}

@@ -1,0 +1,17 @@
+html{
+    font-family: monospace;
+}
+
+.parent{
+    font-size: 24px;
+
+}
+
+.parent > h1{
+    font-size: inherit;
+}
+
+input, button {
+    font-size: inherit;
+    font-family: inherit;
+}
