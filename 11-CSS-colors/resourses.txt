@@ -1,0 +1,2 @@
+Generate palettes. https://coolors.co/generate
+Check contrast, https://coolors.co/contrast-checker/ or https://webaim.org/resources/contrastchecker/

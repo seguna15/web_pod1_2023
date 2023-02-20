@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+h1#color-name{
+    color: plum;
+    padding: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 10px auto;
+    background-color: Black ;
+    opacity: 0.7;
+}
+
+.text-font{
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 10px;
+    padding: 20px;
+}
+
+.rgb-value{
+    color: rgb(93, 148, 202);
+    background-color: rgba(0, 0, 0, 0.9); /*RBG with alpha value to adjust opacity*/
+}
+
+.hex-code {
+    color: #F1B0F2;
+    background-color: #2A0E0E;
+}
+
+.hsl-value{
+    color: hsl(100, 90%, 43%);
+    background-color: hsla(0, 0%, 0%, 0.9); /*HSL with alpha value to adjust opacity*/
+}
