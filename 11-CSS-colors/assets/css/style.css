@@ -41,6 +41,6 @@ h1#color-name{
 }
 
 .hsl-value{
-    color: hsl(100, 90%, 43%);
-    background-color: hsla(0, 0%, 0%, 0.9); /*HSL with alpha value to adjust opacity*/
+    color: hsl(100deg, 90%, 43%);
+    background-color: hsla(0deg, 0%, 0%, 0.9); /*HSL with alpha value to adjust opacity*/
 }

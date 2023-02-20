@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+h1#page-heading{
+    width: 400px;
+    height: 60px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: black;
+    color:burlywood;
+}
+
+.text-font{
+    width: 600px;
+    height: 500px;
+    background-color: aquamarine;
+    font-size: 18px;
+    margin: 40px auto;
+    padding: 20px;
+}
+

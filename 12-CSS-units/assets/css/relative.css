@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body{
+    background-color: antiquewhite;
+    min-height: 100vh; /*View-port Height*/
+    width: 100vw; /* View-port Width*/
+}
+
+header{
+    font-size: 30px;
+}
+
+/* em has to do with the parent element in terms of font-size i.e 1.5 * 30px
+in terms of width and height it has to do with the elements font-size whic */
+h1#page-heading{
+    font-size: 1.5em;
+    width: 10em;
+    height: 2em;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: black;
+    color:burlywood;
+}
+
+article{
+    width: 65rem;
+    height: 55rem;
+    background-color: aquamarine;
+    margin: 4rem auto;
+    padding: 3rem;
+}
+
+article.percentage{
+    width: 60%;
+    height: 70%;
+    background-color: beige ;
+}
+
+h2.article-title{
+    font-size: 2rem;
+    width: 25%;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.text-font{
+    font-size: 1.8rem; 
+}
+
+
+
