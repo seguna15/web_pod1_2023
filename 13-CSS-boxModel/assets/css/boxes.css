@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: azure;
+}
+
+header{
+    width: 200px;
+    height: 140px;
+    border-width: 2px;
+    border-color: purple;
+    border-style: solid;
+    margin: 20px;
+    padding: 20px;
+}
+
+section#home{ 
+    width: 800px;
+    height: 650px;
+    border: 2px solid plum;
+    margin: 20px;
+    padding: 20px;
+    /*overflow: scroll; set height to 400px to use this, it can also have a value of hidden*/
+}
+
+#home > h2{
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 24px;
+    margin: 10px auto;
+    border: 1px solid purple;
+    padding: 10px;
+}
+
+#home > p{
+    font-size: 18px;
+}
+
+#home > .circle {
+    height: 150px;
+    width: 150px;
+    background-color: blueviolet;
+    margin: 30px auto;
+    border-radius: 50%;
+    border: 5px solid red;
+    outline: 2px solid green;
+    outline-offset: 10px;
+}

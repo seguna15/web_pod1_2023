@@ -1,0 +1,5 @@
+1) visit https://fonts.google.com/
+2) search for a font
+3) select the font weight
+4) add the font by copying the import string
+5) copy the font-family declaration and use in the selector you desire the font for.
