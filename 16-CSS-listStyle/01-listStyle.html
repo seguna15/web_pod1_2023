@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Style</title>
+    <link rel="stylesheet" href="./assets/css/listStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <nav>
+            <ul class="link-group">
+                <li><a href="#home" class="link">Home</a></li>
+                <li><a href="#services" class="link">Services</a></li>
+                <li><a href="#pricing" class="link">Pricing</a></li>
+                <li><a href="#enroll" class="link">Enroll</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2 class="section-title">welcome to our page</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto a accusamus facilis, illo dolores, optio at doloremque voluptatem ut maiores natus voluptate cumque totam, assumenda laboriosam nobis eum quo labore reiciendis reprehenderit dolore iure quae similique aliquam. Eum magni tempore cupiditate! Porro veniam, quos mollitia aliquid culpa suscipit numquam ullam iste adipisci rerum alias nisi placeat itaque ratione eum modi, consequuntur officiis perferendis quisquam voluptatem possimus, natus laboriosam? Rerum, dolorem ipsa! Dolores amet sunt dignissimos neque! Blanditiis nesciunt aliquam porro necessitatibus, provident voluptate quia fugiat minima architecto saepe totam nisi, sit quo cumque possimus earum, veniam sunt alias placeat cupiditate consectetur. Similique laborum aut commodi sed eum, expedita illo, quae, natus hic cupiditate quaerat repudiandae. Repudiandae excepturi odit aspernatur eum fugit exercitationem sed maiores enim dolorem, culpa voluptatibus id ad et repellendus porro suscipit inventore, earum quibusdam unde eos quos rerum. Facilis asperiores unde voluptate fuga omnis ducimus nihil tenetur odit iste illum porro, reprehenderit harum. Ducimus sunt culpa illum deserunt non! Doloribus sit odio necessitatibus corrupti. Autem illum, vero veniam, fuga dicta distinctio hic ad architecto corporis nostrum, sapiente et quaerat quasi eius. Laborum enim veritatis odit, et ex excepturi sapiente architecto, est ad id hic aliquam magnam non.</p>
+        </section>
+        <section id="services">
+            <h2 class="section-title">our services</h2>
+            <ol class="services-group">
+                <li class="service-item">Software Development</li>
+                <li class="service-item">Gadget Sales</li>
+                <li class="service-item">Training</li>
+                <li class="service-item">Research</li>
+            </ol>
+        </section>
+        <section id="pricing">
+            <h2 class="section-title">our prices</h2>
+            <ul class="pricing-group">
+                <li class="pricing-item"> Basic $20/Month</li>
+                <li class="pricing-item">Standard $30/Month</li>
+                <li class="pricing-item">Premium $50/Month</li>
+                <li class="pricing-item">Executive $70/Month</li>
+            </ul>
+        </section>
+        <section id="enroll">
+            <h2 class="section-title">enroll today</h2>
+            <div class="form-card">
+                <form action="" id="enrollment-form">
+                    <div class="input-group">
+                        <label for="student-name">Full name</label>
+                        <input type="text" name="student-name" id="student-name" class="student-name" placeholder="Chuckwuma Adekunle Ciroma">
+                    </div>
+                    <div class="input-group">
+                        <label for="student-email">Email</label>
+                        <input type="email" name="student-email" id="student-email" class="student-email" placeholder="mymail@gmail.com">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="circle"><div/>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>
+            &copy; 
+            <span id="date"></span>
+            <script>
+                const span = document.getElementById('date');
+                let date =  new Date();
+                let today = date.getFullYear()
+                span.innerText = today;
+            </script>
+             <a>skriptapod</a>. All rights reserved
+        </p>
+    </footer>
+</body>
+</html>

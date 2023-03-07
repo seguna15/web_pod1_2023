@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: azure;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 200px;
+    height: 140px;
+    border-width: 2px;
+    border-color: purple;
+    border-style: solid;
+    margin: 20px;
+    padding: 20px;
+}
+
+header > h1{
+    font-family: 'Golos Text', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: oblique;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav > .link-group .link{
+    text-decoration: none;
+    cursor: pointer;
+    color: royalblue;
+    font-size: 24px;
+}
+
+nav > .link-group .link:visited{
+    color: brown;
+}
+
+nav > .link-group .link:is(:hover, :focus){
+    color: chocolate;
+    text-decoration: underline;
+}
+
+.section-title{
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 24px;
+    margin: 10px auto;
+    border: 1px solid purple;
+    padding: 10px;
+    font-family: 'Golos Text', sans-serif;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+
+section#home{ 
+    width: 800px;
+    height: 650px;
+    border: 2px solid plum;
+    margin: 20px;
+    padding: 20px;
+    /*overflow: scroll; set height to 400px to use this, it can also have a value of hidden*/
+}
+
+
+#home > p{
+    font-size: 18px;
+    text-indent: 32px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+
+section#enroll{
+    height: 400px;
+    width: 600px;
+    margin:30px;
+    border: 1px solid plum;
+    padding: 20px;
+}
+
+section#enroll :is(input, button){
+    font: inherit;
+}
+
+
+section#enroll > .circle {
+    height: 150px;
+    width: 150px;
+    background-color: blueviolet;
+    margin: 30px auto;
+    border-radius: 50%;
+    border: 5px solid red;
+    outline: 2px solid green;
+    outline-offset: 10px;
+}
