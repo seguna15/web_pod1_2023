@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: azure;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-size: 1.6rem;
+}
+.block{
+    height: 30vh;
+    width: 30vw;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.6rem;
+}
+
+.left{
+    float: left;;
+    margin-right: 1rem;
+}
+
+.right{
+    float: right;
+    margin-left: 1rem;
+}
+
+.clear{
+    clear: both;
+}
+
+article{
+    background-color: bisque;
+    border: 1px solid black;
+    padding: 1rem;
+    display: flow-root;
+}
