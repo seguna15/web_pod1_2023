@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: monospace;
+    background-color: azure;
+}
+
+header{
+    margin: 20px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.columns{
+    column-count: 4;
+    /* column-width: 250px; */
+    column-rule: 3px solid blueviolet;
+    column-gap: 3rem;
+    font-size: 1.6rem;
+    padding: 20px;
+}
+
+.columns h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    break-inside: avoid;
+}
+
+.columns .quote{
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    column-span: all;
+}
+
+.columns .no-wrap{
+    white-space: nowrap;
+}
