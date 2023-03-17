@@ -1,0 +1,12 @@
+This is our second project building Layout with flex box display
+
+Structure 
+
+1) Header
+    a) Logo
+    b) navigation
+2) Main
+    a) section
+    b) aside 1
+    c) aside 2
+3) Footer
