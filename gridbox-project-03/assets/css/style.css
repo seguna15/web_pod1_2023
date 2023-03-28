@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+:root{
+    --red: #E63946;
+    --honey-dew: #F1FAEE;
+    --non-photo-blue: #A8DADC;
+    --cerulean: #457B9D;
+    --berkeley-blue: #1D3557;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    min-width: 1200px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: "header header"
+                        "nav nav"
+                        "main main"
+                        "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 100px auto  100px;
+    padding:  25px 100px 0px;
+    background-color: honeydew;
+}
+
+header{
+   grid-area: header;
+   background-color: transparent;
+   font-size: 3.6rem;
+   font-weight: 500;
+   text-transform: capitalize;
+}
+
+nav{
+   grid-area: nav;
+   background-color: var(--berkeley-blue);
+   place-items: center;
+   padding: 10px 25px;
+}
+
+.link-group{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    height: 90px;
+}
+
+li.link-list{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li.link-list:nth-child(5){
+    margin-left: auto;
+}
+
+li.link-list > a.link{
+    background-color: var(--cerulean);
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+li.link-list > a.link:hover{
+    background-color: var(--non-photo-blue);
+    color: var(--berkeley-blue);
+}
+
+main{
+    grid-area: main;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    margin-block: 3rem;
+}
+
+section.main-content{
+    background-color: transparent;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding: 2rem 3rem;
+    color: #000;
+}
+
+section.main-content > h1 {
+    font-size: 3.4rem;
+    word-spacing: .5rem;
+    margin-bottom: 20px;
+}
+
+section.main-content > p {
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    word-spacing: .3rem;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+section.sidebar{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 1.4fr 1fr;
+    gap: 3rem; 
+}
+
+aside:is(.sidebar-one, .sidebar-two){
+    background-color: var(--berkeley-blue);
+}
+
+section.sidebar > aside.sidebar-one{
+    padding: 20px;
+}
+
+.sidebar-one > h2 {
+    text-align: right;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.login-form{
+    width: 100%;
+}
+
+.login-form > .input-group{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 20px;
+}
+
+.input-group > label {
+    font-size: 1.8rem;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.input-group > :is(input[type=text], input[type=password]){
+    height: 36px;
+    font-size: 2rem;
+    border: none;
+    padding: 5px;
+}
+
+.input-group > :is(input[type=text], input[type=password]):focus{
+    border: 2px solid var(--cerulean);
+    outline: none;
+}
+
+.login-form > button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: 40%;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    border: 2px solid var(--cerulean);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.login-form > button:hover{
+    background-color: var(--cerulean);
+    border-color: white;
+    color: white;
+}
+
+section.sidebar > aside.sidebar-two{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sidebar-two > h3{
+    text-align: center;
+    font-size: 1.6rem;
+    color: White;
+    text-transform: uppercase;
+}
+ 
+.pricing  > p{
+    font-size: 6rem;
+    font-weight: 500;
+    color: white;
+    position: relative;
+}
+
+.pricing span.currency{
+    font-size: 2.5rem;
+    font-weight: 500;
+    position: absolute;
+    top: 2.5rem;
+    left: -1.5rem;
+}
+
+.pricing > p > sup {
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+}
+
+.sidebar-two > .button {
+    display: block;
+    background-color: white;
+    width: 90%;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    color: var(--berkeley-blue);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+
+/** Footer CSS*/
+footer{
+    grid-area: footer;
+    background-color: blueviolet;
+    min-height: 50px;
+    background-color: var(--berkeley-blue);
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
