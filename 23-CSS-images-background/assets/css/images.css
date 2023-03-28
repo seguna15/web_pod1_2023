@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: monospace;
+    height: 100vh;
+}
+
+/* CSS RESET */
+img{
+    display: block;
+}
+
+/*utility classes allow us follow the programming rule of DRY i.e Do Not Repeat Yourself.*/
+/* UTILITY */
+.no-wrap{
+    white-space: nowrap;
+}
+.offscreen{
+    position: absolute;
+    left: -10000px;
+}
+
+/* Header CSS */
+header{
+    height: 100px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.6rem;
+    margin-bottom: 4rem;
+}
+
+/* Hero Section CSS */
+section.container{
+    background-color: rgb(251, 210, 156);
+    background-image: url('../images/map-2176x1451.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+div.hero{
+    border-bottom: 2px solid red;
+    margin-bottom: 20px;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+    
+    background-color: rgba(0, 0, 0, .25);
+}
+
+div.hero > .profile-figure{
+    width: 35%;
+}
+
+figure.profile-figure > img{
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px solid grey;
+    border-radius: 50%;
+}
+
+.hero-heading{
+    font-size: 500%;
+    color: aliceblue;
+    /* x-axis y-axis blue value and color*/
+    text-shadow: 2px 2px 5px red;
+   /*  background-color: rgba(0, 0, 0, .4);
+    padding: 2.5rem;
+    border-radius: 10px; */
+}
+
+/* Example Section CSS */
+section.example{
+    padding-left: 2rem;
+    border: 1px solid red;
+}
+
+section.example > p {
+    font-size: 2.4rem;
+}
+section.example img{
+    width: 25%;
+    height: auto; 
+}
