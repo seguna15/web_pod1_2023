@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 36px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: monospace;
+    min-height: 100vh;
+}
+
+main{
+    min-height: 100vh;
+}
+
+header h1{
+    text-align: center;
+}
+
+main{
+    height: 100vh;
+    margin-block: 40px;
+}
+
+section.container{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+div.square{
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-content:center;
+    border: 1px solid violet;
+}
+
+div.square:first-child{
+    background-color: dodgerblue;
+}
+
+div.square:nth-child(2){
+    background-color: yellow;
+}
+
+div.square:last-child{
+    background-color: orange;
+}
+
+div.square:hover{
+    background-color: midnightblue;
+    border: 5px solid maroon;
+    width: 250px;
+    height: 250px;
+    /* transition-property: background-color, border;
+    transition-duration: 2s;
+    transition-timing-function: linear; 
+    transition-delay: .5s;*/
+    transition: all 2s ease-in .5s;
+}
+
+div.square:last-child:hover{
+    transform: rotateX(180deg);
+} 

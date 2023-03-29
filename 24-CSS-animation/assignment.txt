@@ -1,0 +1,1 @@
+Create an animation of an item e.g a car that moves from the beginning of your screen to the end.
