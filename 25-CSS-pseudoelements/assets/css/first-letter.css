@@ -1,0 +1,29 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+p{
+    width: 60%;
+    text-align: justify;
+    font-size: 18px;
+    border: 1px solid orangered;
+    padding: 20px;
+}
+
+p::first-letter{
+    color: red;
+    font-size: 40px;
+    font-weight: 700;
+    float: left;
+    line-height: 1;
+    margin-right: 4px;
+}
