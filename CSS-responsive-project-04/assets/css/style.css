@@ -20,6 +20,7 @@
     --sm-margin: 20px;
     --xs-margin: 10px;
 
+    --xlg-padding: 40px;
     --lg-padding: 30px;
     --sm-padding: 15px;
     --xs-padding: 10px;
@@ -61,6 +62,14 @@ li{ list-style-type: none; }
     font-weight: 500;
 }
 
+.section-title:after{
+    display: block;
+    content: '';
+    width: 150px;
+    height: 5px;
+    margin: 5px auto 30px;
+
+}
 .container{
     margin: var(--sm-margin) auto;
 }
@@ -224,6 +233,10 @@ section.about > .section-title{
     color: var(--lavender-floral);
 }
 
+section.about > .section-title:after{
+    background-image: linear-gradient(to right, var(--lavender-floral), var(--fluorescent-cyan));
+}
+
 section.about .container{
     width: 80%;
     display: grid;
@@ -232,6 +245,10 @@ section.about .container{
 }
 
 .about-img{
+    display: flex;
+    justify-content: center;
+}
+.about-img > img{
     width: 100%;
     height: auto;
 }
@@ -266,7 +283,80 @@ section.about .container{
     padding-left: var(--xs-padding);
 }
 
+/** Services  & Features CSS */
+.section.services, .section.features{
+    padding-inline: var(--lg-padding);
+    background-color: var(--black);
+    height: 60vh;
+    padding-block: var(--xlg-padding);
+    display: grid;
+    place-items: center;
+}
 
+.section.features{
+    background-color: transparent; 
+}
+
+:is(section.services, .section.features ) > .section-title{
+    color: var(--lavender-floral);
+}
+
+:is(section.services, .section.features ) > .section-title:after{
+    background-image: linear-gradient(to right, var(--lavender-floral), var(--fluorescent-cyan));
+}
+
+:is(section.services, .section.features ) > .container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--md-margin);
+}
+
+.services-cards, .features-cards{
+    display: grid;
+    place-items: center;
+    height: auto;
+    padding-block: var(--lg-padding);
+    gap: 2rem;
+    border-radius: 25px;
+}
+
+.services-cards {
+    background-image: linear-gradient(120deg, var(--lavender-floral) 20%, var(--periwinkle) 80%);
+}
+
+.features-cards {
+    background-image: linear-gradient(120deg, var(--violet-web) 20%, var(--lavender-floral) 80%);
+}
+
+:is(.services-cards, .features-cards):is(:hover, :focus){
+    box-shadow: 4px 4px 5px 2px var(--non-photo-blue);
+    transition: all .5s ease-in .1s;
+}
+
+:is(.service-logo, .feature-logo){
+    height: 80px;
+    width: 80px;
+    display: grid;
+    place-items: center;
+    border: 2px dashed var(--fluorescent-cyan);
+    border-radius: 50%;
+    outline: 3px solid var(--black);
+    outline-offset: 5px;
+    
+}
+
+:is(.service-logo, .feature-logo) > i {
+    font-size: var(--lg-fonts);
+    color: var(--black);
+}
+
+:is(.services-cards, .features-cards) > :is(.service-text, .feature-text) {
+    font-size: var(--sm-fonts);
+    color: var(--black);
+    text-transform: capitalize;
+    font-weight: 500;
+}
 /** END MAIN CSS */
 
 
