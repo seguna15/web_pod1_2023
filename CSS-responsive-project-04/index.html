@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header id="header">
+    <header id="header" class="">
         <div class="logo">
             <img src="./assets/images/monex.png" alt="logo" title="our logo" height="100" width="100">
         </div>
@@ -162,18 +162,92 @@
 
         <!-- Team Section -->
         <section id="team" class="team section">
-
+            <h2 class="section-title">our team</h2>
+            <div class="container">
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="./assets/images/john-doe.png" alt="john doe" title="john doe" width="400" height="600">
+                    </div>
+                    <div class="team-desc">
+                        <div class="team-text">
+                            <h3>john doe</h3>
+                            <p>backend dev</p>
+                        </div>
+                        <div class="socials">
+                            <i class="ri-github-fill"></i>
+                            <i class="ri-linkedin-fill"></i>
+                            <i class="ri-twitter-fill"></i>
+                            <i class="ri-medium-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="./assets/images/jane-doe.png" alt="john doe" title="john doe" width="400" height="600">
+                    </div>
+                    <div class="team-desc">
+                        <div class="team-text">
+                            <h3>jane doe</h3>
+                            <p>frontend dev</p>
+                        </div>
+                        <div class="socials">
+                            <i class="ri-github-fill"></i>
+                            <i class="ri-linkedin-fill"></i>
+                            <i class="ri-twitter-fill"></i>
+                            <i class="ri-medium-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="./assets/images/josh-doe.png" alt="john doe" title="john doe" width="400" height="600">
+                    </div>
+                    <div class="team-desc">
+                        <div class="team-text">
+                            <h3>josh doe</h3>
+                            <p>ui/ux designer</p>
+                        </div>
+                        <div class="socials">
+                            <i class="ri-linkedin-fill"></i>
+                            <i class="ri-twitter-fill"></i>
+                            <i class="ri-medium-fill"></i>
+                            <i class="ri-behance-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="contact section">
-
+            <h2 class="section-title">contact us</h2>
+            <form action="" class="contactForm">
+                <div class="input-group">
+                    <label for="full-name">Full name</label>
+                    <input type="text" name="full-name" id="full-name" placeholder="Enter you full name">
+                </div>
+                <div class="input-group">
+                    <label for="usermail">Email</label>
+                    <input type="email" name="usermail" id="usermail" placeholder="Enter you email address">
+                </div>
+                <div class="input-group">
+                    <label for="message">message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
 
     </main>
 
-    <footer>
-
+    <footer id="footer">
+        <p>Property of <a href="https://skriptapod.ng">SkriptaPod</a> &copy; <span id="date-span"></span>. All rights reserved.</p>
     </footer>
+
+    <script>
+        const dateSpan = document.getElementById('date-span');
+        const date = new Date();
+        dateSpan.innerText = date.getFullYear();
+    </script>
 </body>
 </html>

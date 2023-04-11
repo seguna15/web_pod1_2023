@@ -15,7 +15,7 @@
     --sm-fonts: 18px;
     --xs-fonts: 12px;
 
-    --lg-margin: 60px;
+    --lg-margin: 50px;
     --md-margin: 30px;
     --sm-margin: 20px;
     --xs-margin: 10px;
@@ -60,6 +60,7 @@ li{ list-style-type: none; }
     font-size: var(--lg-fonts);
     text-transform: capitalize;
     font-weight: 500;
+    color: var(--lavender-floral);
 }
 
 .section-title:after{
@@ -68,8 +69,9 @@ li{ list-style-type: none; }
     width: 150px;
     height: 5px;
     margin: 5px auto 30px;
-
+    background-image: linear-gradient(to right, var(--lavender-floral), var(--fluorescent-cyan));
 }
+
 .container{
     margin: var(--sm-margin) auto;
 }
@@ -95,6 +97,9 @@ header#header{
     z-index: 3;
 }
 
+header#header.active{
+    background-color: var(--lavender-floral);
+}
 div.logo > img{
     width: 150px;
     height: auto;
@@ -229,14 +234,6 @@ section.about{
     padding-inline: var(--lg-padding);
 }
 
-section.about > .section-title{
-    color: var(--lavender-floral);
-}
-
-section.about > .section-title:after{
-    background-image: linear-gradient(to right, var(--lavender-floral), var(--fluorescent-cyan));
-}
-
 section.about .container{
     width: 80%;
     display: grid;
@@ -287,22 +284,15 @@ section.about .container{
 .section.services, .section.features{
     padding-inline: var(--lg-padding);
     background-color: var(--black);
-    height: 60vh;
-    padding-block: var(--xlg-padding);
+    padding-block: var(--lg-padding);
     display: grid;
     place-items: center;
+    gap: var(--sm-margin);
 }
 
 .section.features{
     background-color: transparent; 
-}
-
-:is(section.services, .section.features ) > .section-title{
-    color: var(--lavender-floral);
-}
-
-:is(section.services, .section.features ) > .section-title:after{
-    background-image: linear-gradient(to right, var(--lavender-floral), var(--fluorescent-cyan));
+    padding-top:0;
 }
 
 :is(section.services, .section.features ) > .container{
@@ -357,6 +347,171 @@ section.about .container{
     text-transform: capitalize;
     font-weight: 500;
 }
+
+:is(.services, .features) > .button {
+    font-size: var(--md-fonts);
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border-radius: 5px;
+}
+
+.button.transparent{
+    color: white;
+    border: 1px solid white;
+}
+.button.transparent:is(:hover, :focus){
+    border-width: 1.5px;
+    /*box-shadow: x-offset, y-offset, blur, spread, color ;*/    
+    box-shadow: 5px 4px 5px 1px #F481EA;
+    transition: all .5s ease-in-out .1s;
+}
+
+.button.dark{
+    color: var(--black);
+    border: 1px solid var(--black);
+}
+
+.button.dark:is(:hover, :focus){
+    /*box-shadow: x-offset, y-offset, blur, spread, color ;*/    
+    border-width: 1.5px;
+    box-shadow: 5px 4px 5px 1px var(--lavender-floral);
+    transition: all .5s ease-in-out .1s;
+}
+
+/** Team CSS */
+.section.team{
+    padding-inline: var(--lg-padding);
+    padding-block: var(--sm-padding);
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.team > .container{
+    width:90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+.team-card{
+    position: relative;
+}
+.team-img{
+    width: 100%;
+}
+.team-img > img{
+    width: 100%;
+    height: auto;
+}
+.team-desc{
+    position: absolute;
+    background-color: var(--whitesmoke);
+    width: 100%;
+    top: 90%;
+    left: 0;
+    text-align: center;
+}
+
+.team-text > h3{
+    font-size: var(--md-fonts);
+    text-transform: capitalize;
+    margin-bottom: .5rem;
+}
+
+.team-text > p {
+    font-size: var(--sm-fonts);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.socials {
+    font-size: var(--md-fonts);
+    margin-top: .5rem;
+}
+
+/** Contact CSS */
+.section.contact{
+    display: grid;
+    place-items: center;
+}
+
+.contactForm{
+    width: 60%;
+}
+
+div.input-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.input-group > label {
+    color: var(--black);
+    font-size: var(--sm-fonts);
+    text-transform: capitalize;
+}
+
+.input-group > input:is([type="text"], [type="email"]){
+    height: 40px;
+    border: 1px solid var(--lavender-floral);
+    border-radius: 5px;
+    font-size: var(--sm-fonts);
+    padding-left: var(--sm-padding);
+    color: var(--black);
+}
+
+.input-group > :is(input:is([type="text"], [type="email"]), textarea):is(:focus, :hover){
+    border: 2px solid var(--violet-web);
+}
+
+.input-group > input::placeholder{
+    color: var(--black);
+    font-size: var(--sm-fonts);
+}
+
+.contactForm textarea {
+    height: 200px;
+    border: 1px solid var(--lavender-floral);
+    border-radius: 5px;
+    font-size: var(--sm-fonts);
+    color:var(--black)
+}
+
+.contactForm > button[type="submit"]{
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: none;
+    box-shadow: 5px 4px 5px 1px var(--violet-web);
+    background-color: var(--lavender-floral);
+    font-size: var(--sm-fonts);
+    color: var(--whitesmoke);
+}
+
+.contactForm > button[type="submit"]:hover{
+    box-shadow: 5px 4px 5px 1px var(--lavender-floral);
+    background-color: var(--violet-web);
+    transition: all .5 ease-in-out .1s;
+}
 /** END MAIN CSS */
 
+
+/** FOOTER CSS */
+#footer{
+    height: 60px;
+    background-color: var(--lavender-floral);
+    color: whitesmoke;
+    font-size: var(--sm-fonts);
+    display: grid;
+    place-items: center;
+}
+
+#footer a {
+    color: var(--fluorescent-cyan)
+}
+/** END OF FOOTER CSS */
 
