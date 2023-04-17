@@ -348,6 +348,10 @@ section.about .container{
     font-weight: 500;
 }
 
+:is(.services-cards, .features-cards) > :is(.service-text, .feature-text) > p{
+    text-align: center;
+}
+
 :is(.services, .features) > .button {
     font-size: var(--md-fonts);
     padding: 1rem 1.5rem;
@@ -659,6 +663,27 @@ div.input-group{
     }
 
     section.hero{
-        height: 50vh;
+        height: 80vh;
+    }
+
+    section.hero > div.overlay{
+        height: 80vh;
+    }
+    section.hero > div.hero-text{
+        height: 80vh;
+        text-align: center;
+    }
+
+    div.scroll-down{
+        display: none;
+    }
+
+    section.about .container {
+        grid-template-columns: auto;
+    }
+
+    :is(section.services, .section.features ) > .container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
