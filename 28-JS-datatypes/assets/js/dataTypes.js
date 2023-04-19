@@ -3,7 +3,7 @@ let num1 = 10;
 let floatOne = 3.145;
 //alert(`num1: ${num1}`);
 
-// Strings
+// String
 let nameOne = 'Cypher';
 let nameTwo = "Seedorf";
 let nameThree = `Pelumi${num1}`;
@@ -37,8 +37,7 @@ let undefinedVal;
 //Symbol
 let id = Symbol(1);
 let id2 = Symbol(1);
-
-//alert(id === id2); 
+alert(id === id2); 
 
 const emp1 = {
     id: Symbol('0001'),
@@ -54,7 +53,8 @@ const emp2 = {
     role: 'Cloud Engineer'
 };
 
-//alert(emp1.id === emp2.id); //false because no two symbols are the same
+alert(emp1.id === emp2.id); //false because no two symbols are the same
 
 // Assignment check for the data type of the variables we have declared above using the typeof operator
-alert(typeof id);
+let testValue = 2;
+alert(typeof testValue);

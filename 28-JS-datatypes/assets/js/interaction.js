@@ -12,3 +12,4 @@ if(deleteOption){
 }else{
     alert('User did not delete item');
 }
+alert(deleteOption);

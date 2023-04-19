@@ -1,9 +1,9 @@
 //implicit conversion 
 let sum = 3 - '2';
-//alert(sum); // 1
+alert(sum); // 1
 
 let sum2 = 3 + '2';
-//alert(sum2); // 32 because + with a string value will concatenate the values
+alert(sum2); // 32 because + with a string value will concatenate the values
 
 //String conversion
 let myNum = 45;
