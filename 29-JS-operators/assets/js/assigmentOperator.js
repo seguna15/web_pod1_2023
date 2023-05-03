@@ -1,5 +1,4 @@
 //Assignment Operators
-
 // =
 let myNum = 10;
 console.log(`myNum: ${myNum}`);
