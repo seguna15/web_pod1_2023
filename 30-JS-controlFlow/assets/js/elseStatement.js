@@ -14,4 +14,5 @@ if (age >= 18) {
     alert("In a few years you will be 18. However, we appreciate your enthusiasm.");
 }
 
+//runs after our if else block
 alert("your program has finished executing");

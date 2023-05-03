@@ -4,7 +4,7 @@
     return type
  } 
  */
-greet();
+
 //sum(); will result in  an error as it cannot be called before its initialization
 const sum = function(a,b) {
     return a  + b;

@@ -1,4 +1,4 @@
-const ageValidator = () => {
+const checkAge = () => {
     const age = parseInt(prompt("How old are you?"));
     if(age >= 18) {
         return true;
@@ -7,7 +7,4 @@ const ageValidator = () => {
     }
 };
 
-
-
-
-
+alert(checkAge());

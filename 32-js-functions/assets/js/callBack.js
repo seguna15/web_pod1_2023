@@ -21,4 +21,5 @@ function showContent (myCallBack1, myCallBack2 ){
     }
 }
 
+//passing the methods as parameters called callbacks
 showContent(getAge,checkAge);

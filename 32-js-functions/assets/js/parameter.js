@@ -1,6 +1,5 @@
-//dynamically supplied parameters
-
-//let gender = prompt("enter your gender?").toLowerCase();
+// parameterized function
+let gender = prompt("enter your gender?").toLowerCase();
 function genderGreeting(myGender) {
   if (myGender == "male") {
     alert(`welcome sir`);
@@ -11,9 +10,9 @@ function genderGreeting(myGender) {
   }
 }
 
-//genderGreeting(gender);
+genderGreeting(gender);
 
-//default parameters
+//default or optional parameter
 const username = prompt("kindly supply your username");
 const text = prompt('enter your preferred greeting');
 function displayUser(username, text ='Welcome'){
