@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    font-size: 2rem;
+    color: green
+}
+
+form input, form button, form select {
+    font-size: inherit;
+    color: inherit;
+}
