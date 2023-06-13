@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous JavaScript</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        ul li {
+            font-size: 24px;
+        }
+
+        p.error-message{
+            color: red;
+        }
+    </style>
+
+    <script src="./js/githubProfile.js" defer></script>
+</head>
+
+<body>
+    <p class="error-message"></p>
+    <form action="" id="profileForm">
+        <input type="text" name="profileName" id="profileName" placeholder="Insert Github profile">
+        <button type="submit">Retrieve Profile</button>
+    </form>
+    <div class="result">
+        <p id="resultText"></p>
+        <p id="login"></p>
+        <img src="" alt="" id="avatar-url">
+        <a href="" id="url" target="_blank">Git Hub Link</a>
+    </div>
+</body>
+
+</html>
